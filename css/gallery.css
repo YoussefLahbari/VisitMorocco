@@ -1,0 +1,265 @@
+/* -------------- This code was made with love by youssef Lahbari --------------- */
+/* ------ General hacks ------ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.logo{
+    background-image: url(../images/Coat-of-arms-of-Morocco-01.png);
+    background-size: 100%;
+    padding: 25px;
+  }
+  .logo-txt{
+    color: #333;
+    position: fixed;
+    left: 180px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+  }
+ul{
+  list-style: none;
+}
+/* ------------ 1- Navigation Bar ------------ */
+/* the only thing in this website that's not 100% mine, 
+ check souce here: https://www.youtube.com/watch?v=bk3Y4heVdFs */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0,.1);
+    padding: 0px 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+header .logo{
+    font-weight: bolder;
+    font-size: 25px;
+    color: #333;
+}
+header .navbar ul{
+    list-style: none;
+}
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+header .navbar ul li a{
+    font-size: 20px;
+    padding: 20px;
+    padding-left: 30px;
+    color: #333;
+    display: block;
+}
+header .navbar ul li a:hover{
+    background: #333;
+    color: #fff;
+}
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #fff;
+    display: none;
+}
+header .navbar ul li ul li{
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+header .navbar ul li ul li ul{
+    left: 200px;
+    top: 0;
+}
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul{
+    display: initial;
+}
+#menu-bar{
+  display: none;
+}
+header .menu {
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+  display: none;
+}
+/* 4-footer */
+footer{
+  background-image: url(../images/islamic-new-year-pattern-background.jpg);
+  background-size:contain;
+  height: 200px;
+}
+.fot-container{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px; 
+}
+.fot-sub{
+  color:#333;
+  text-shadow:0 2px 2px rgba(0,0,0,.25);
+}
+.fot-links{
+  text-align: start;
+  padding-left: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.cities-top{
+  width: fit-content;
+  text-align: center;
+}
+.food-top{
+  width: fit-content;
+  text-align: center;
+}
+.contact{
+  width: fit-content;
+  text-align: center;
+}
+.fot-title{
+  margin-bottom: 10px;
+  color: #333;
+  font-size:2vw;
+  text-align: center;
+  font-weight:900;
+  font-family:'Courier New', Courier, monospace;
+  text-shadow:0 2px 2px rgba(0,0,0,.25);
+}
+.space{
+  padding: 3px;
+}
+.fot-text{
+  color: #333;
+  font-size:1.5vw;
+  text-align: center;
+  text-shadow:0 2px 2px rgba(0,0,0,.25);
+}
+.fot-text:hover{
+  color:gray;
+}
+  /* Gallery page */
+  .videos{
+    width: 80%;
+    margin-top: 90px;
+    margin-bottom: 110px;
+    position: relative;
+    left: 10%;
+    border: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .1);
+    border-radius: 25px;
+    padding-top: 20px;
+    background: url(../images/3392075.jpg);
+    background-size: contain;
+  }
+  .video{
+    padding: 40px;
+  }
+  .title-vid{
+    position: relative;
+    left: 43%;
+    padding: 25px;
+    color:rgba(0, 0, 0, .95);
+    font-weight: bolder;
+    font-size: 3vw;
+  }
+  .images{
+    width: 80%;
+    margin-top: 90px;
+    margin-bottom: 110px;
+    position: relative;
+    left: 10%;
+    border: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .1);
+    border-radius: 25px;
+    padding-top: 20px;
+    background: url(../images/3392075.jpg);
+    background-size: contain;
+  }
+  .images-con{
+    padding: 40px;
+    width: 100%;
+  }
+  .title-img{
+    position: relative;
+    left: 43%;
+    padding: 25px;
+    color:rgba(0, 0, 0, .95);
+    font-weight: bolder;
+    font-size: 3vw;
+  }
+  /* Responsive design */
+@media screen and (max-width:991px) {
+    header{
+      padding: 20px;
+    }
+    header .menu {
+      display: inline;
+    }
+    header .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: #fff;
+      border-top: 1px solid rgba(0, 0, 0,.1);
+      display: none;
+    }
+    header .navbar ul li {
+      width: 100%;
+    }
+    header .navbar ul li ul{
+      position: relative;
+      width: 100%;
+    }
+    header .navbar ul li ul li{
+      background-color: #eee;
+    }
+    header .navbar ul li ul li ul{
+      width: 100%;
+      left: 0;
+    }
+    #menu-bar:checked ~ .navbar{
+      display: initial;
+    }
+    .logo-txt{
+      display: none;
+    }
+    .container-slider{
+      display: none;
+    }
+    .fot-text{
+        font-size:2vw;
+      }
+      .fot-sub{
+        font-size:3.3vw;
+      }
+  }
+  @media screen and (max-width:500px) {
+    .home{
+      position: relative;
+      top: 70px;
+      margin-bottom: 71px;
+      width: 100%;
+    }
+    .services{
+      flex-direction: column;
+      width: 80%;
+      margin-left: 60px;
+    }
+    .fot-text{
+      font-size:2vw;
+    }
+    .fot-sub{
+      font-size:3.3vw;
+    }
+  }

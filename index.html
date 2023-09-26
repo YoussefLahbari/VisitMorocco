@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Home.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Navigation bar in header -->
+    <header>
+        <a href="#" class="logo"></a>
+        <a href="#" class="logo-txt">Visit morocco</a>
+        <input type="checkbox" name="" id="menu-bar">
+        <label class="menu" for="menu-bar">menu</label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="pages/blogs.html">Blogs +</a>
+                <ul>
+                    <li><a href="pages/blogs.html#text-1">Morocco</a></li>
+                    <li><a href="pages/blogs.html">Cities +</a>
+                        <ul>
+                            <li><a href="pages/blogs.html#text-2">Marrackech</a></li>
+                            <li><a href="pages/blogs.html#text-3">Casablanca</a></li>
+                            <li><a href="pages/blogs.html#text-4">Tanger</a></li>
+                        </ul>
+                    </li>
+                </ul></li>
+                <li><a href="pages/gallery.html">gallery +</a>
+                    <ul>
+                        <li><a href="pages/gallery.html#images">Images</a></li>
+                        <li><a href="pages/gallery.html#videos">Video</a></li>
+                    </ul>
+                </li>
+                <li><a href="pages/contact.html">More +</a>
+                    <ul>
+                        <li><a href="pages/contact.html">About</a></li>
+                        <li><a href="pages/contact.html">contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container-slider" >
+        <div class="slider">
+            <input type="checkbox" name="play-pause" id="play-pause">
+           <label class="pause" for="play-pause"></label>
+           <p class="guide">&#x21AB click here to start animation</p>
+           <label class="play" for="play-pause"></label>
+            <div class="container ">
+                <div class="img">
+                    <p class="title">Here is your home, welcome to Morocco!</p>
+                    <a href="pages/blogs.html" class="subtitle">Snow, Green and Desert all together !</a>
+                    <img src="images/Morocco office opeining - inspire header.jpg" alt="">  
+                </div>
+                <div class="img">
+                    <p class="title">Amazing Historical Monuments !</p>
+                    <a href="pages/blogs.html" class="subtitle">> Learn more about it</a>
+                    <img src="images/photos-maroc-Ben-Youssef-Medersa.jpg.webp" alt="">
+                </div>
+                <div class="img">
+                    <p class="title">Challalat Ouzout, Get relaxed !</p>
+                    <a href="pages/blogs.html" class="subtitle">> Learn more about it</a>
+                    <img src="images/photos-maroc-cascades-Ouzoud.jpg.webp" alt="">
+                </div>
+                <div class="img">
+                    <p class="title">Jibal al atlas, Extraordinary nature !</p>
+                    <a href="pages/blogs.html" class="subtitle">> Learn more about it</a>
+                    <img src="images/photos-maroc-Haut-Atlas.jpg.webp" alt="">
+                </div>
+                <div class="img">
+                    <p class="title">Welcome to the official moroccan website !</p>
+                    <a href="pages/blogs.html" class="subtitle">> Learn more about morocco</a>
+                    <img src="images/photos-maroc-souk-Jamaa-el-Fna.jpg.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home">
+        <div class="home-container">
+            <h1 class="services-title">1- Gallery :</h1>
+            <div class="services">
+                <a class="images-gal resize-all" style="display:block" href="pages/gallery.html#images"> 
+                    <img class="re-sized " src="images/photos-icon.webp" alt="">   
+                    <img class="img-gal" src="images/traveler-walking-through-a-narrow-blue-street-in-morocco.jpg" alt="">
+                </a>
+                <a class="img-home resize-all" style="display:block" href="pages/gallery.html#videos">
+                    <img class="ree-sized" src="images/pngegg.png" alt="">  
+                    <img class="img-img" src="images/morocco-things-to-know-feature.jpg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="home-container">
+            <h1 class="services-title">2- Blogs :</h1>
+            <div class="services">
+                <a class="infos resize-all" style="display:block" href="pages/blogs.html#">
+                    <span class="infos-title resize-titles">Informations</span>
+                    <img class="info-img " src="images/5dc6db43b9fd2e1b5289ba16923ff230.jpg" alt="">
+                </a>
+                <a class="recommended resize-all" style="display:block" href="pages/blogs.html">    
+                    <span class="rec-title resize-titles">Top <br> recommended</span>
+                    <img class="img-rec" src="images/Morocco_ChefchouenAerial_Zzvet-iStock-473937070.webp" alt="">
+                </a>
+                <a class="gallery resize-all resize-hight" style="display:block" href="pages/blogs.html">
+                    <!-- I did this image as background in css, to resize it cover -->
+                    <span class="gal-title resize-titles">Best dishes</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer>
+            <div class="fot-container">
+                <div class="cities-top">
+                    <h1 class="fot-sub">Top cities</h1>
+                    <div class="fot-links">
+                        <span class="space"><a class="fot-text" href="#">Marrackech</a></span>
+                        <span class="space"><a class="fot-text" href="#">El-Houssaima</a></span>
+                        <span class="space"><a class="fot-text" href="#">Casablanca</a></span>
+                    </div>
+                </div>
+                <div class="food-top">
+                    <h1 class="fot-sub">Top Food</h1>
+                    <div class="fot-links">
+                        <span class="space"><a class="fot-text" href="#">Couscous</a></span>
+                        <span class="space"><a class="fot-text" href="#">Tajine</a></span>
+                        <span class="space"><a class="fot-text" href="#">Bastila</a></span>
+                    </div>
+                </div>
+                <div class="contact-me">  
+                    <h1 class="fot-sub">Contact</h1>
+                    <div class="fot-links">
+                        <span class="space"><a class="fot-text" href="#">Facebook</a></span>
+                        <span class="space"><a class="fot-text" href="#">Instagrame</a></span>
+                        <span class="space"><a class="fot-text" href="#">Twitter</a></span>
+                    </div>
+                </div>
+            </div>
+            <p class="fot-title">Made with ❤️ by Youssef Lahbari</p>
+    </footer>
+</body>
+</html>
